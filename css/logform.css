@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background-color: #ecf0f3;
+}
+
+.login-div{
+    width: 430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 10px;
+    /* Neumorphismi osa */
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff; 
+}
+.register-div{
+    width: 430px;
+    height: 770px;
+    padding: 30px 35px 35px 35px;
+    /* Neumorphismi osa */
+    border-radius: 10px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #fff; 
+}
+
+.logo{
+    background: url(logo.jpg);
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px #5f5f5f,
+    0px 0px 0px 5px #ecf0f3,
+    8px 8px 15px #a7aaaf,
+    -8px -8px 15px #fff;
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+    letter-spacing: 0.5px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 1px;
+}
+.fields{
+    width: 100%;
+    padding: 75px 5px 10px 5px;
+}
+.fields2{
+    width: 100%;
+    padding: 35px 5px 10px 5px;
+}
+.fields input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 17px;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+}
+.fields2 input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: #555;
+    padding: 20px 0px 17px 30px;
+}
+.username,
+.password{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+.fields svg {
+    height: 22px;
+    margin: 0 10px -3px 25px;
+}
+.signin-button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:"Lato", sans-serif;
+    color: rgb(97, 97, 97);
+    background-color: #ecf0f3;
+    text-align: center;
+    box-shadow: 3px 3px 8px #b1b1b1,
+    -3px -3px 8px #fff;
+    transition: all 0.3s;
+}
+.signin-button:hover{
+    background-color: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;    
+}
+.signin-button:active{
+    background-color: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;    
+}
+.link{
+    padding-top: 20px;
+    text-align: center;
+}
+.link a{
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+}
+.form-group{
+    padding-left: 5px;
+}
+.alert.alert-danger{
+    text-align: center;
+    color: red;
+    padding-top: 5px;
+}
+
+/* Chrome vaktsiin */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
